@@ -14,3 +14,4 @@
 .resume-monogram{width:auto;min-width:54px;height:54px;padding:0 10px;border-radius:27px;font-size:10px;white-space:nowrap}
 .orb-core span{font-size:22px;letter-spacing:-.055em;white-space:nowrap}
 @media(max-width:640px){.orb-core span{font-size:19px}}
+.resume-actions{display:flex;margin:-24px 0 28px}.resume-project{margin:10px 0 12px}.resume-project h4{margin:0 0 3px}.resume-project h4 a{display:inline-flex;align-items:center;gap:4px;color:#222832}.resume-project h4 a:hover{color:#2869d7}.resume-project .resume-tech{font-size:9px;color:#697486;margin-top:2px}
