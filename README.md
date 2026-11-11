@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Daksh Malik — Developer Portfolio
 
-## Getting Started
+A personal portfolio for Daksh Malik, a Computer Science and Engineering student exploring artificial intelligence, machine learning, and product building. The site presents his background, current skills and learning focus, project explorations, resume structure, and contact links.
 
-First, run the development server:
+## Features
+
+- Responsive pages for Home, About, Skills, Projects, Currently Learning, Resume, and Contact
+- Dark and light themes, with a compact mobile navigation
+- Project, skill, profile, and learning content maintained in central TypeScript data files
+- DIY, a predefined portfolio assistant that answers from the published portfolio information
+- A simulated developer terminal with a fixed set of harmless commands; it does not run shell commands
+- Subtle card and scroll reveal motion, with reduced-motion support
+- Metadata for the site and its individual pages
+
+Project repository links and a downloadable resume are intentionally absent until Daksh supplies actual repository URLs and verified resume details.
+
+## Tech stack
+
+- Next.js 16 App Router
+- React 19 and TypeScript
+- Tailwind CSS 4 with project-specific CSS styling
+- Framer Motion for lightweight reveal animations
+- Lucide React icons
+
+## Local setup
+
+Install a compatible Node.js release and npm, then run:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+There are no required environment variables, database, or external AI service for the current version.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Useful commands
 
-## Learn More
+```bash
+npm run lint       # ESLint
+npx tsc --noEmit   # TypeScript check
+npm run build      # Production build
+npm run start      # Serve the production build locally
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Updating portfolio content
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `src/data/profile.ts` — name, public contact links, headline, and introduction
+- `src/data/projects.ts` — project cards and technology tags
+- `src/data/skills.ts` — skill categories and listed technologies
+- `src/data/learning.ts` — current focus, explored topics, next goals, and timeline
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The DIY assistant reads these same data files so its answers can stay aligned with the portfolio. Keep project repository links and resume details factual when adding them.
 
-## Deploy on Vercel
+## Routes
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+| Route | Content |
+| --- | --- |
+| `/` | Introduction and featured portfolio sections |
+| `/about` | Academic background and interests |
+| `/skills` | Skills grouped by topic |
+| `/projects` | Project explorations |
+| `/learning` | Current learning focus and goals |
+| `/resume` | ATS-friendly resume page structure |
+| `/contact` | Email and social links |
